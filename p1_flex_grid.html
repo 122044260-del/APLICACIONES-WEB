@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   <style>
+.contenedor{
+    /*flex es para un columna o una fila, column o row
+    display: flex;
+    flex-direction: row;*/
+    gap:20px; 
+    display: grid;
+    grid-template-column: repeat(3, 1fr);
+}
+     .card-larga {
+         grid-column: 3;
+         grid: row: span 1;
+
+         display: flex;
+         flex-direcion: column;
+    }
+
+
+   </style>       
+
+<body>
+    <div class="contenedor">
+        <div class="card" style="background-color:green; width:250px;"><h1>ALAN ALAN ALAN ALAN </h1> 
+<img src=""
+        
+        <div class="card" style="background-color:blue; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
+        
+        <div class="card-larga" style="background-color:green ; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
+        
+        <div class="card" style="background-color:blue; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
+        
+        <div class="card" style="background-color:green; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
+        <div class="card" style="background-color:blue; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
+        
+        <div class="card" style="background-color:green; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
+        
+        <!-- div.cargo[atyle]*4-->
+    </div>
+</body>
+</html>
