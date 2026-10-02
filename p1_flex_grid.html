@@ -5,43 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-   <style>
-.contenedor{
-    /*flex es para un columna o una fila, column o row
-    display: flex;
-    flex-direction: row;*/
-    gap:20px; 
-    display: grid;
-    grid-template-column: repeat(3, 1fr);
-}
-     .card-larga {
-         grid-column: 3;
-         grid: row: span 1;
-
-         display: flex;
-         flex-direcion: column;
-    }
-
-
-   </style>       
-
 <body>
-    <div class="contenedor">
-        <div class="card" style="background-color:green; width:250px;"><h1>ALAN ALAN ALAN ALAN </h1> 
-<img src=""
+
+    <div class="cv">
         
-        <div class="card" style="background-color:blue; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
-        
-        <div class="card-larga" style="background-color:green ; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
-        
-        <div class="card" style="background-color:blue; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
-        
-        <div class="card" style="background-color:green; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
-        <div class="card" style="background-color:blue; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
-        
-        <div class="card" style="background-color:green; width:250px;"><h1>ALAN ALAN ALAN ALAN</h1> 
-        
-        <!-- div.cargo[atyle]*4-->
+    <header class="encabezado" style="display: flex; background-color: rgb(227, 189, 93);">
+        <div class="foto">
+            <img src="img/FDLI0057.JPG" alt="" style="width: 120px; padding: 20px; border-radius: 50%; padding: 30px 50px 30px;">
+        </div>
+
+        <div class="informacion-personal" style="text-align: left;">
+            <h2>Alan Rodrigo Mora Real</h2>
+            <h3>Estudiante de Ingeniera en Tecnologias de l Informacion e Innovacion Digital</h3>
+        </div>
+    </header>
+    <main class="contenido" style="display: grid; grid-template-columns: 35% 65%;">
+        <div class="columna-izquierda" style="padding: 20px; background-color: rgba(0, 140, 255, 0.701);">
+           <div class="contacto">
+             <h4>CONTACTO</h4>
+            <ul>ññ
+                <li>4463059919</li>
+                <li>moraalan88@gmail.com</li>
+                <li>hola@puq.com</li>
+            </ul>
+           </div>
+
+           <div class="habilidades">
+            <h4>LOQUE SE HAECR</h4>
+            <ul>
+                <li>lo que sea </li>
+                <li>programar </li>
+                <li>Gestion de activos</li>
+                <li>ser creativo</li>
+                <li>reportes</li>
+              
+            </ul>
+           </div>
+
+           <section>
+            <h4>estudios</h4>
+            <ul>
+                <li><strong>Diplomado en programacion</strong></li>
+                <p>Universidad humanitas</p>
+                <p>2012- 2014</p>
+            </ul>
+            <ul>
+                <li><strong>Diplomado en programacion</strong></li>
+                <p>Universidad humanitas</p>
+                <p>2012-2014</p>
+            </ul>
+           </section>
+
+        </div>
+
+        <div class="columna-derecha" style="padding: 20px; background-color: rgb(208, 238, 255);">
+           <section>
+            <h4> ACERCA DE MI</h4>
+            <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut tempora esse corrupti possimus fugit consectetur eligendi nam iure, magni amet id dignissimos. Possimus iure ea minus reiciendis fuga officiis repellendus.</p>
+           </section>
+           <section>
+            <h4>EXPERIENCIA</h4>
+           </section>
+           <ul>
+                <li><strong>area de programacion</strong></li>
+                <p>huawei</p>
+                <p>2014 - 2025</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis cupiditate, 
+                officiis labore quasi blanditiis quia laboriosam accusantium magnam soluta ut reiciendis corrupti a quas, ipsum quos deserunt beatae eum</p>
+            </ul>
+
+            <ul>
+                <li><strong>area de programacion</strong></li>
+                <p>huawei</p>
+                <p>2014 - 2025</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis cupiditate, 
+                officiis labore quasi blanditiis quia laboriosam accusantium magnam soluta ut reiciendis corrupti a quas, ipsum quos deserunt beatae eum</p>
+            </ul>
+
+        </div>
+    </main>
+    
     </div>
+
 </body>
 </html>
