@@ -1,21 +1,23 @@
-<?<php
+<?php
 
-/* creacion de una funcion llamada conectar*/ 
-/* funcion -> Bloque de codigo que podemos mandar a llamar cuando*/ 
+    /* Creacion de una funcion llamada conectar */
+    /* Funcion → Bloque de codigo que podemos mandar a llamar cuando lo necesitemos */
+    function conectar(){
+        /* Informacion del servidor */
+        $host="localhost";
+        $user="root";
+        $pass="";
 
-funnction conectar (){
-/* informacion del servidor*/
-$host="localhost";
-$host="root";
-$past=" ";
+        /* Base de datos */
+        $db="aw_crud";
 
-/* Base de datos */
-$db="";
+        /* Funcion de PHP que permite conectar a MySQL */
+        $con=mysqli_connect($host,$user,$pass);
 
-$con=mysqli_connect($host,$user,$pass);
-mysqli_select_db($con, $db);
+        /* Con eso nosotros les estamos diciendo que BD vamos a utilizar, pasamos la informacion de con y de bd */
+        mysqli_select_db($con, $db);
 
-return $con;
-}
+        return $con;
 
+    }
 ?>
